@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
       </div>
       <dl className="relative mx-auto mt-16 grid max-w-6xl grid-cols-3 gap-4 px-5">
-        {[['200+', 'LeetCode Problems'], ['300+', 'CodeChef Problems'], ['4+', 'Featured Projects']].map(([v, l]) => (
+        {[['300+', 'LeetCode Problems'], ['300+', 'CodeChef Problems'], ['4+', 'Featured Projects']].map(([v, l]) => (
           <div key={l} className="border-l border-line pl-4"><dd className="text-3xl font-extrabold">{v}</dd><dt className="text-sm text-muted">{l}</dt></div>
         ))}
       </dl>
