@@ -32,14 +32,14 @@ export default function Navbar() {
           <a href={LINKS.github} aria-label="GitHub" className="hidden text-muted hover:text-fg sm:block"><Github size={18} /></a>
           <a href={LINKS.linkedin} aria-label="LinkedIn" className="hidden text-muted hover:text-fg sm:block"><Linkedin size={18} /></a>
           <button onClick={toggle} aria-label="Toggle theme" className="text-muted hover:text-fg">{light ? <Moon size={18} /> : <Sun size={18} />}</button>
-          <a href={LINKS.resume} className="hidden rounded-lg bg-primary px-4 py-1.5 text-sm font-semibold text-slate-950 hover:opacity-90 md:block">Resume</a>
+          <a href={LINKS.resume} target="_blank" rel="noreferrer" className="hidden rounded-lg bg-primary px-4 py-1.5 text-sm font-semibold text-slate-950 hover:opacity-90 md:block">Resume</a>
           <button className="md:hidden" onClick={() => setOpen(!open)} aria-label="Menu" aria-expanded={open}>{open ? <X /> : <Menu />}</button>
         </div>
       </nav>
       {open && (
         <div className="flex flex-col gap-4 px-5 pb-6 md:hidden">
           {items.map((i) => <a key={i} href={`#${i}`} onClick={() => setOpen(false)} className={link(i) + ' text-base'}>{i}</a>)}
-          <a href={LINKS.resume} className="rounded-lg bg-primary px-4 py-2 text-center font-semibold text-slate-950">Resume</a>
+          <a href={LINKS.resume} target="_blank" rel="noreferrer" className="rounded-lg bg-primary px-4 py-2 text-center font-semibold text-slate-950">Resume</a>
         </div>
       )}
     </header>

@@ -64,5 +64,5 @@ export const stats = [
 export const architectures = [
   { title: 'Enterprise Backend', nodes: ['Client', 'REST API', 'Controller', 'Service', 'Repository', 'Database'] },
   { title: 'Serverless', nodes: ['Client', 'API Gateway', 'Lambda', 'DynamoDB'] },
-  { title: 'Microservices', nodes: ['API Gateway', 'Employee Service', 'MySQL'] },
+  { title: 'Microservices', nodes: ['API Gateway', 'Order Service', 'Inventory Service', 'Payment Service', 'Notification Service'] },
 ]

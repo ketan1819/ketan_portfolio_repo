@@ -20,7 +20,7 @@ export default function Hero() {
           <p className="mt-6 max-w-xl text-lg text-muted">I build scalable backend systems, enterprise applications, REST APIs and cloud-based solutions using Java, Spring Boot and AWS.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#projects" className={`${Btn} bg-primary text-slate-950`}>View my work</a>
-            <a href={LINKS.resume} className={`${Btn} border border-line hover:border-primary/60`}>Download resume</a>
+            <a href={LINKS.resume} target="_blank" rel="noreferrer" className={`${Btn} border border-line hover:border-primary/60`}>Download resume</a>
           </div>
           <div className="mt-8 flex gap-5 text-muted">
             <a href={LINKS.github} aria-label="GitHub" className="hover:text-fg"><Github /></a>
